@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
 import variaveis from './variaveis'
-import { Botao } from '../components/TarefaCard/styles'
 
 const EstiloGlobal = createGlobalStyle`
   * {
@@ -14,6 +13,18 @@ const EstiloGlobal = createGlobalStyle`
 export const Container = styled.div`
   display: grid;
   grid-template-columns: 224px auto;
+`
+
+export const Botao = styled.button`
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: ${variaveis.azulEscuro};
+  border-radius: 8px;
+  margin-right: 8px;
 `
 
 export const MainContainer = styled.main`
